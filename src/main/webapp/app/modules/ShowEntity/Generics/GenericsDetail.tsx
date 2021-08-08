@@ -3,7 +3,6 @@ import { Link, RouteComponentProps } from 'react-router-dom';
 import { Button, Row, Col, Table } from 'reactstrap';
 import { TextFormat } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { getBrand } from 'app/entities/brand/brand.reducer';
 import { getEntity } from 'app/entities/generics/generics.reducer';
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
@@ -20,7 +19,6 @@ export const GenericsDetail = (props: RouteComponentProps<{ id: string }>) => {
   const { gname, dosage, dosageunit, ingredientsused } = genericsEntity;
   return (
     <>
-      {console.log(brands)}
       <Row>
         <Col md="12">
           <div className="display-4 text-center">Generics</div>
